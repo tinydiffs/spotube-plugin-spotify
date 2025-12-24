@@ -16,7 +16,7 @@ class PlaylistEndpoint {
     return client.playlist.tracks(id, offset: offset, limit: limit).then((data) {
       var paginated = Converters.paginated(
         data, 
-        (items) => Converters.fullTracks(items.map((item)=>item["track"]).toList())
+        (items) => Converters.fullTracks(items)
       )
 
       // Spotify playlists can contain local tracks which do not have an ID and cannot be played
