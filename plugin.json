@@ -1,7 +1,7 @@
 {
-  "version": "0.2.2",
+  "version": "0.2.269",
   "name": "Spotify",
-  "author": "Sonic Liberation",
+  "author": "tinydiffs",
   "description": "Spotube plugin for Spotify metadata",
   "entryPoint": "SpotifyMetadataProviderPlugin",
   "apis": ["webview", "localstorage", "timezone"],
